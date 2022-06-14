@@ -1,5 +1,5 @@
 from django.db import models
 
-clss Sms(models.Model):
+class Sms(models.Model):
     text = models.TextField()
     

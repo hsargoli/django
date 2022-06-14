@@ -1,0 +1,225 @@
+<!doctype html>
+
+<html>
+<head>
+	<title> isg </title>
+	<style type= "text/css">
+	 html, body {
+		background-color: #00000;
+		margin-left: 140px;
+		padding: 0; }
+
+
+	.toggle {
+		text-decoration: none;
+		font-size: 2em;
+		color: rgba(0, 0, 0, 0.61);
+		-webkit-transition: all 0.15s ease-out 0;
+		-moz-transition: all 0.15s ease-out 0;
+		transition: all 0.45s ease-out 0;
+		position: fixed;
+		top: 20px;
+		left: 20px;
+		z-index: 1;
+		cursor: pointer;
+		}
+
+	.sidebar {
+		position: fixed;
+		top: 0px;
+		bottom: 0px;
+		left: -190px;
+		-webkit-transition: all 0.15s ease-out 0;
+		-moz-transition: all 0.15s ease-out 0;
+		transition: all 0.15s ease-out 0;
+		width: 8rem;
+		padding: 1.5em;
+		background: #19C4BC; 
+		}
+
+	.sidebar ul {
+		list-style: none;
+		margin: 0;
+		padding: 0; 
+		}
+
+	.sidebar li a {
+		color: #fff;
+		font-family: 'Poiret One', cursive;
+		font-size: 1.2em;
+		margin: 0;
+		margin-bottom: 16px;
+		cursor: pointer;
+		text-decoration: none;
+		line-height: 200%;
+		}
+
+	.sidebar a:hover {
+		  color: rgba(0, 0, 0, 0.61); 
+		}
+
+	#slide:checked + .container .sidebar {
+		left: 0px;
+		 }
+
+		#slide:checked + .container .toggle {
+		left: 200px;
+		 }
+
+
+		#slide {
+		display: none; 
+		}
+
+
+	ul {
+	  list-style-type: none;
+	  margin: 0;
+	  padding: 0;
+	  overflow: hidden;
+	  background-color: #333;
+	  position: fix
+	  position: sticky;
+	  top: 0;
+	}
+
+	li {
+	  float: left;
+	}
+
+	li a {
+	  display: block;
+	  color: white;
+	  text-align: center;
+	  padding: 14px 16px;
+	  text-decoration: none;
+	}
+
+	li a:hover {
+	  background-color: #111;
+	}
+
+	 #main {
+		
+		margin-right: 20%;
+		border: 1px dotted green;
+		padding: 10px 10px 10px 10px;
+		font-family: sans-serif;
+	 }
+	footer {
+		text-align: center;
+		padding: 3px;
+		background-color: DarkSalmon;
+		color: white;
+	}
+	#other {
+		margin-left: 45%;
+		margin-right: 48%;
+	}
+
+
+	@media screen and (max-height: 450px) {
+	  .sidenav {padding-top: 15px;}
+	  .sidenav a {font-size: 18px;}
+	}
+	
+	</style>
+
+	<script>
+	
+	setTimeout(p,3000);
+	function wakeUp(){
+		alert("are you awake?");
+	}
+	function prr(){
+		prompt('this is it','type here');
+	}
+	</script>
+</head>
+
+<body>
+<!--top navbar -->
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">MyGraph</a></li>
+  <li><a href="#contact">Contact</a></li>
+</ul>
+
+
+<!--side nav -->
+<input type="checkbox" id="slide" name="" value="" />
+	<div class="container">
+		<label for="slide" class="toggle">☰</label>
+		<nav class="sidebar"> 
+			<ul>
+				<li><a href="#"> Nav1 </a></li>
+				<li><a href="#"> Nav2 </a></li>
+				<li><a href="#"> Nav3 </a></li>
+				<li><a href="#"> Nav4 </a></li>
+				<li><a href="#"> Nav5 </a></li>
+			</ul>
+		</nav>
+	</div>
+<!-- -->
+<input type="checkbox" id="slide" name="" value="" />
+	<div class="container">
+		<label for="slide" class="toggle">☰</label>
+		<nav class="sidebar"> 
+			<ul>
+				<li><a href="#"> Nav1 </a></li>
+				<li><a href="#"> Nav2 </a></li>
+				<li><a href="#"> Nav3 </a></li>
+				<li><a href="#"> Nav4 </a></li>
+				<li><a href="#"> Nav5 </a></li>
+			</ul>
+		</nav>
+	</div>
+	
+	
+	
+	
+<h1 id = "main"> welcome </h1>
+<p id="main"> this web site is created for you <a href="main.php#about"> about </a></p>
+<p> i am hosein sargoli from iran I want to show you <a id="progress">my progress </a></p>
+<p id = "other"> its about my life, my goals, 
+ooooooooooooooooooooooo
+ooooooooooooooooooo
+ooooooooooooooooooo
+ooooooooooooooooooo
+ooooooooooooooooooo
+ooooooooooooooooooo
+ooooooooooooooooooo
+ooooooooooooooooooo
+ooooooooooooooooooo
+ooooooooooooooooooo
+ooooooooooooooooooo
+ooooooooooooooooooo
+ooooooooooooooooooo
+ooooooooooooooooooo
+ooooooooooooooooooo
+ooooooooooooooooooo
+oooooooooooooooo
+oooooooooooooooo
+oooooooooooooooo
+oooooooooooooooo
+oooooooooooooooo</p>
+<!-- LIST -->
+<ul>
+	<li> past </li>
+	<li>present</li>
+	<li>futur </li>
+	<li> Ml </li>
+	<li> dl </li>
+	<li> algorithm </li>
+</ul>
+
+<footer>
+<p id = "about"> <a href = "other/about2.php"> about me </a></p>
+<p> go <a href = "http://www.google.com" title = "this is google" target="_blank"> gggg</a> ok i like this </p>
+<p> go <a href = "http://www.google.com" title = "this google" target="_blank"><img src="image/xxx.jpg"> </a></p>
+<p> game 1 <a href= "other/game1.php"> here </a></p>
+</footer>
+</body>
+
+
+</html>
